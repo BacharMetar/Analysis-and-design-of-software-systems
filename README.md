@@ -1,89 +1,66 @@
-# ADSS_Group_A
+```markdown
+# SuperLi - Super Management System
 
-Daniel Ohayon 322404559 Vladislav Shembel 322126350
+Welcome to SuperLi, a comprehensive super management system that efficiently handles inventory, suppliers, and storage. This project involves both backend and frontend programming, resulting from collaborative efforts by two pairs, ultimately forming a cohesive 4-person group. The system boasts a command-line interface (CLI) and a graphical user interface (GUI) for ease of use.
 
-Metar Bachar 206892317 Assaf Mishael 318359734
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [CLI](#cli)
+  - [GUI](#gui)
+- [Database](#database)
+- [Usage](#usage)
+- [Contributors](#contributors)
 
-## Instructions
+## Introduction
+SuperLi is a super management system designed to streamline inventory management, supplier interactions, and storage tracking. It merges the expertise of two pairs into a seamless solution that benefits super store management.
 
-**help** = show the manual
+## Features
+- Efficiently manage inventory items and storage spaces.
+- Maintain supplier relationships and information.
+- Command-line interface (CLI) for power users.
+- Graphical user interface (GUI) for user-friendly interactions.
+- Database connectivity to store items and historical data.
 
-### Suppliers Menu
+## Getting Started
 
-**makereservation** [branch] = open the reservation menu.
+### CLI
+To run the project using the command-line interface (CLI):
 
-- enter lines in the format of "[supplier_id] [product_id] [amount]"
-- for changing amount of product type the line again with the updated amount
-- for closing the reservation menu enter "done"
-- for aborting the reservation enter "abort"
-- after completing the reservation. You will get a response with the reservation id if was successful
+1. Make sure you have Python 3.x installed on your system.
+2. Clone or download this repository.
+3. Open a terminal/command prompt and navigate to the project directory.
+4. Run the following command to start the CLI application:
 
-**cancelreservation** [reservation_id] = cancel the reservation
+   ```sh
+   python cli.py
+   ```
 
-**readyreservation** [reservation_id] = make the reservation ready
+5. For a list of available commands, type `help` in the CLI.
 
-**closereservation** [reservation_id] = close the reservation
+### GUI
+To run the project using the graphical user interface (GUI):
 
-**addPeriodicReservation** [supplier_id] [branch_id] [week_day] = add a new periodic reservation for the supplier and branch
+1. Make sure you have a compatible web browser installed (e.g., Chrome, Firefox).
+2. Clone or download this repository.
+3. Open the `gui.html` file in your web browser.
+4. Interact with the GUI to manage inventory, suppliers, and storage.
 
-**updatePeriodicReservation** [supplier_id] [branch_id] [week_day] = update an existing periodic reservation for the supplier and branch
+## Database
+SuperLi utilizes a robust database to store item information and historical records. This ensures data integrity and provides insights into the system's operation.
 
-**receipt** [reservation_id] = show all items, amounts, and prices for this reservation
+## Usage
+- Use the CLI for advanced users who prefer text-based interactions.
+- Use the GUI for a more user-friendly experience.
+- Manage inventory, suppliers, and storage effortlessly.
 
-**reservations** [supplier_id] = show all reservations history with the supplier
+## Contributors
+- Pair 1: [Name 1](https://github.com/name1) and [Name 2](https://github.com/name2)
+- Pair 2: [Name 3](https://github.com/name3) and [Name 4](https://github.com/name4)
 
-**addSupplier** = Adds a new supplier to the system. Enter the information that the system will ask you to about the supplier you want to add.
+Feel free to reach out to any of the contributors for questions, feedback, or improvements.
 
-**deleteSupplier** [supplier_id] = Deletes an existing supplier from the system.
+```
 
-**editSupplier** [supplier_id] = After typing this command, you can edit the supplier information with the following commands:
-
-- **updateName** [new_name]
-- **updateBankAccount** [new_bankAccount]
-- **addField** [new_field]
-- **removeField** [field_to_remove]
-- **updatePaymentCondition** [new_paymentCondition]
-- **addContact** [contact_phone] [contact_name]
-- **deleteContact** [contact_phone] [contact_name]
-- **addAgreement** [product_id] [supplier_id] = Adds a new product agreement with a supplier. The system will ask you about information needed to this action. If an agreement already exist, the system will update it to the new one.
-
-**getCard** [supplier_id] = Information about the supplier will be presented.
-
-### Inventory menu
-
-**addBranch** = adds a new branch to the system
-
-**addProductBranch** = adds a new product to an existing branch
-
-**1** Add new product
-
-**2** Add Category
-
-**3** Sell product
-
-**4** Set discount - categories
-
-**5** Set discount - product
-
-**6** Report flaw product
-
-**7** Import inventory Report
-
-**8** Import expired and flaws report
-
-**9** Import deficiency report
-
-**10** Import inventory report by categories
-
-**11** Import report by report id
-
-**12** Import product report
-
-**13** Import shortage report
-
-**exit** = exit the program
-
-## Tools
-
-- **junit-4.13.2** for the tests
-- **sqlite-jdbc-3.41.2.1** for the database
+Replace the placeholder text with actual information relevant to your project. This README template provides sections for introduction, features, getting started instructions for both CLI and GUI, information about the database, usage guidelines, and a list of contributors.
