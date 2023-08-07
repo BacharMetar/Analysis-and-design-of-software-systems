@@ -14,6 +14,10 @@ Welcome to SuperLi, a comprehensive super management system that efficiently han
 ## Introduction
 SuperLi is a super management system designed to streamline inventory management, supplier interactions, and storage tracking. It merges the expertise of two pairs into a seamless solution that benefits super store management.
 
+## Overview
+Throughout the development process of SuperLi, we followed a structured approach that included the creation of various diagrams to ensure clarity and effective communication. At each step along the way, we created UML diagrams, requirements documents, and various other visual aids to help guide our project.
+you can see it all on the docs folder, on the Specification Document pdf file
+
 ## Features
 - Efficiently manage inventory items and storage spaces.
 - Maintain supplier relationships and information.
